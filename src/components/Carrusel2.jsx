@@ -9,21 +9,21 @@ function Carrusel2() {
           <div className="carousel-item active">
             <img
               src="./public/banner4.png"
-              className="d-block w-80"
+              className="d-block w-100"
               alt="banner4"
             />
           </div>
           <div className="carousel-item">
             <img
               src="./public/banner5.png"
-              className="d-block w-80"
+              className="d-block w-100"
               alt="banner5"
             />
           </div>
           <div className="carousel-item">
             <img
               src="./public/banner6.png"
-              className="d-block w-80"
+              className="d-block w-100"
               alt="..."
             />
           </div>
