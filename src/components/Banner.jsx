@@ -1,6 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
-import ImgMain from "../../public/imgmain.png";
+import ImgMain from "../../public/banner0.png";
 
 function Banner() {
   return (
@@ -8,7 +8,7 @@ function Banner() {
       <img
         src={ImgMain}
         alt="Aqui esta el banner"
-        style={{ maxWidth: "1280px", maxHeight: "900px" }}
+        style={{ maxWidth: "100%", height: "auto" }}
       />
     </>
   );
