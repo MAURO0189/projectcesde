@@ -8,21 +8,21 @@ function Carrusel2() {
         <div className="carousel-inner">
           <div className="carousel-item active">
             <img
-              src="./public/prevencion-robo.png"
+              src="./public/banner4.png"
               className="d-block w-80"
               alt="banner4"
             />
           </div>
           <div className="carousel-item">
             <img
-              src="./public/talleres-aliados.png"
+              src="./public/banner5.png"
               className="d-block w-80"
               alt="banner5"
             />
           </div>
           <div className="carousel-item">
             <img
-              src="./public/repuestos-usados.png"
+              src="./public/banner6.png"
               className="d-block w-80"
               alt="..."
             />
