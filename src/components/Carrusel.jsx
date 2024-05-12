@@ -7,25 +7,13 @@ function Carrusel() {
       <div id="carouselExample" className="carousel slide">
         <div className="carousel-inner">
           <div className="carousel-item active">
-            <img
-              src="./public/banner0.png"
-              className="d-block w-100"
-              alt="banner1"
-            />
+            <img src="/banner1.png" className="d-block w-100" alt="banner1" />
           </div>
           <div className="carousel-item">
-            <img
-              src="./public/banner2.png"
-              className="d-block w-100"
-              alt="banner2"
-            />
+            <img src="/banner2.png" className="d-block w-100" alt="banner2" />
           </div>
           <div className="carousel-item">
-            <img
-              src="./public/banner3.png"
-              className="d-block w-100"
-              alt="banner3"
-            />
+            <img src="/banner3.png" className="d-block w-100" alt="banner3" />
           </div>
         </div>
         <button
