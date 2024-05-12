@@ -23,7 +23,7 @@ function Home() {
         <div className="col">
           <div className="card h-100">
             <img
-              src="./public/vacunacion.jpg"
+              src="./public/vacunacion.png"
               className="card-img-top"
               alt="vacunacion"
             />
@@ -38,7 +38,7 @@ function Home() {
         </div>
         <div className="col">
           <div className="card h-100">
-            <img src="./public/info.jpg" className="card-img-top" alt="..." />
+            <img src="./public/covid.png" className="card-img-top" alt="..." />
             <div className="card-body">
               <h5 className="card-title">
                 ¿Qué hacer si tienes sintomas de COVID-19?
@@ -52,11 +52,7 @@ function Home() {
         </div>
         <div className="col">
           <div className="card h-100">
-            <img
-              src="./public/agendate.jpg"
-              className="card-img-top"
-              alt="..."
-            />
+            <img src="./public/info.png" className="card-img-top" alt="..." />
             <div className="card-body">
               <h5 className="card-title">Información general</h5>
               <p className="card-text">
