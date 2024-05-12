@@ -8,7 +8,7 @@ function Carrusel() {
         <div className="carousel-inner">
           <div className="carousel-item active">
             <img
-              src="./public/banner1.png"
+              src="./public/banner0.png"
               className="d-block w-100"
               alt="banner1"
             />
