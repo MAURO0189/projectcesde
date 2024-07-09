@@ -27,7 +27,7 @@ function ChatBot() {
   return (
     <>
       <button className="botonChat" onClick={toggleChat}>
-        <FontAwesomeIcon icon={faRobot} size="2x" />
+        Markbot <FontAwesomeIcon icon={faRobot} size="1x" />
       </button>
       {isChatOpen && (
         <div className="chatBot">
