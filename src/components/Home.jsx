@@ -4,12 +4,15 @@ import Nav from "./Nav";
 import Banner from "./Banner";
 import "../assets/style/styles.css";
 import Footer from "./Footer";
+import ChatBot from "./ChatBot";
 
 function Home() {
   return (
     <>
       <Nav />
-      <Banner />
+      <main style={{ marginTop: "70px" }}>
+        <Banner />
+      </main>
       <div className="mt-5 mx-3">
         <h3 className="titulo">SURA acompaña a los latinoamericanos</h3>
         <p className="texto">
@@ -19,6 +22,7 @@ function Home() {
           con presencia regional en 10 países.
         </p>
       </div>
+      <ChatBot />
       <div className="row row-cols-1 row-cols-md-3 g-4 mt-3 mx-3">
         <div className="col">
           <div className="card h-100">

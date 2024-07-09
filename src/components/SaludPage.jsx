@@ -6,6 +6,7 @@ import Carrusel from "./Carrusel";
 import Footer from "./Footer";
 import "../assets/style/styles.css";
 import FormularioSalud from "./FormularioSalud";
+import ChatBot from "./ChatBot";
 
 function SaludPage() {
   return (
@@ -41,7 +42,10 @@ function SaludPage() {
           </div>
         </div>
       </nav>
-      <Carrusel />
+      <main style={{ marginTop: "70px" }}>
+        <Carrusel />
+      </main>
+      <ChatBot />
       <section className="container-fluid">
         <div className="row justify-content-center">
           <div className="col-8">

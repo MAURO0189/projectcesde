@@ -6,6 +6,7 @@ import Carrusel2 from "./Carrusel2";
 import Footer from "./Footer";
 import "../assets/style/styles.css";
 import FormularioMovilidad from "./FormularioMovilidad";
+import ChatBot from "./ChatBot";
 
 function Movilidad() {
   return (
@@ -41,7 +42,10 @@ function Movilidad() {
           </div>
         </div>
       </nav>
-      <Carrusel2 />
+      <main style={{ marginTop: "70px" }}>
+        <Carrusel2 />
+      </main>
+      <ChatBot />
       <section className="container-fluid">
         <div className="row justify-content-center">
           <div className="col-8">
