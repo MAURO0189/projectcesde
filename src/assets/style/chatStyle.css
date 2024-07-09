@@ -1,0 +1,18 @@
+.botonChat {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1;
+}
+
+.chatBot {
+  position: fixed;
+  bottom: 70px;
+  border: 1px solid #e7e7e7;
+  border-radius: 10px;
+  background-color: #f8f8f8;
+  right: 20px;
+  height: 400px;
+  width: 300px;
+  z-index: 1;
+}
