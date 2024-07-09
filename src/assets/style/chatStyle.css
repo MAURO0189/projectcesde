@@ -61,7 +61,7 @@
 .inputContainer button {
   padding: 5px 10px;
   border: none;
-  background-color: #007bff;
+  background-color: #2d6df6;
   color: white;
   border-radius: 10px;
   font-family: "Barlow", sans-serif;
@@ -73,7 +73,7 @@
 }
 
 .userMessage {
-  color: green;
+  color: #888b8d;
   text-align: right;
   word-break: break-word;
 }
