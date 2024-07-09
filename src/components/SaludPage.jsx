@@ -10,7 +10,7 @@ import FormularioSalud from "./FormularioSalud";
 function SaludPage() {
   return (
     <>
-      <nav className="navbar navbar-expand-lg navbar-light bg-light mt-3 my-2">
+      <nav className="navbar navbar-expand-lg fixed-top nav1  my-2">
         <div className="container">
           <Link className="navbar-brand" to="/">
             <img
@@ -33,7 +33,7 @@ function SaludPage() {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ms-auto">
               <li className="nav-item">
-                <Link className="nav-link" to="/">
+                <Link className="nav-link text-white" to="/">
                   Home
                 </Link>
               </li>

@@ -2,11 +2,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Logosura from "../../public/logosura.png";
-
+import "../assets/style/styles.css";
 function Nav() {
   return (
     <>
-      <nav className="navbar navbar-expand-lg navbar-light bg-light mt-3 my-2">
+      <nav className="navbar navbar-expand-lg fixed-top nav1 text-white my-2">
         <div className="container">
           <Link className="navbar-brand" to="/">
             <img
@@ -29,17 +29,17 @@ function Nav() {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ms-auto">
               <li className="nav-item">
-                <Link className="nav-link" to="/saludPage">
+                <Link className="nav-link text-white" to="/saludPage">
                   Salud en Casa
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/movilidad">
+                <Link className="nav-link text-white" to="/movilidad">
                   Movilidad
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/about">
+                <Link className="nav-link text-white" to="/about">
                   Acerca de
                 </Link>
               </li>
