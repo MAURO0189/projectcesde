@@ -1,9 +1,17 @@
-// eslint-disable-next-line no-unused-vars
 import React from "react";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import Logosura from "../../public/logosura.png";
 import "../assets/style/styles.css";
+
 function Nav() {
+  const navigate = useNavigate();
+  const handleLogOut = () => {
+    localStorage.removeItem("user");
+    localStorage.removeItem("userToken");
+    navigate("/");
+  };
+
   return (
     <>
       <nav className="navbar navbar-expand-lg fixed-top nav1 text-white my-2">
@@ -42,6 +50,14 @@ function Nav() {
                 <Link className="nav-link text-white" to="/about">
                   Acerca de
                 </Link>
+              </li>
+              <li className="nav-item">
+                <button
+                  className="nav-link text-white btn"
+                  onClick={handleLogOut}
+                >
+                  Salir
+                </button>
               </li>
             </ul>
           </div>
