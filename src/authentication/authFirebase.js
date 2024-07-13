@@ -1,27 +1,38 @@
 import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 import { app } from "./firebaseConfig";
 
-const auth = getAuth();
+const auth = getAuth(app);
 const provider = new GoogleAuthProvider();
-signInWithPopup(auth, provider)
-  .then((result) => {
-    // This gives you a Google Access Token. You can use it to access the Google API.
+const signInWithGoogle = async () => {
+  try {
+    const result = await signInWithPopup(auth, provider);
     const credential = GoogleAuthProvider.credentialFromResult(result);
     const token = credential.accessToken;
-    // The signed-in user info.
     const user = result.user;
-    // IdP data available using getAdditionalUserInfo(result)
-    // ...
-  })
-  .catch((error) => {
-    // Handle Errors here.
+
+    // Almacenar token y usuario en localStorage
+    localStorage.setItem("user", JSON.stringify(user));
+    localStorage.setItem("userToken", token);
+
+    return { user, token };
+  } catch (error) {
     const errorCode = error.code;
     const errorMessage = error.message;
-    // The email of the user's account used.
     const email = error.customData.email;
-    // The AuthCredential type that was used.
     const credential = GoogleAuthProvider.credentialFromError(error);
-    // ...
-  });
 
-export { auth, provider, signInWithPopup };
+    // Manejo de errores
+    console.error(
+      "Error al iniciar sesión con Google:",
+      errorCode,
+      errorMessage
+    );
+    alert(
+      "Error al iniciar sesión con Google. Por favor, inténtalo de nuevo más tarde."
+    );
+
+    throw error;
+  }
+};
+
+export { auth, provider, signInWithGoogle };
