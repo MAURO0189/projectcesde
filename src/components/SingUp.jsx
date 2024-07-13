@@ -1,14 +1,12 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import {
-  auth,
-  provider,
-  signInWithPopup,
-} from "../authentication/authFirebase";
+import { signInWithGoogle } from "../authentication/authFirebase";
+import { useUser } from "../context/UserContext";
 import "../assets/style/singUp.css";
 
 function SingUp() {
   const navigate = useNavigate();
+  const { setUser, setToken } = useUser();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [useGoogle, setUseGoogle] = useState(false);
@@ -21,9 +19,9 @@ function SingUp() {
 
   const handleGoogleLogin = async () => {
     try {
-      const result = await signInWithPopup(auth, provider);
-      const user = result.user;
-      console.log(user);
+      const { user, token } = await signInWithGoogle();
+      setUser(user);
+      setToken(token);
       navigate("/home");
     } catch (error) {
       console.error(
