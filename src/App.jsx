@@ -8,6 +8,7 @@ import SingUp from "./components/SingUp";
 import { UserProvider } from "./context/UserContext";
 import NotBackRoute from "./components/routes/NotBackRoute";
 import ProtectedRoute from "./components/routes/ProtectedRoute";
+import Load from "./components/Load";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             <Route element={<NotBackRoute />}>
               <Route path="/" element={<SingUp />} />
             </Route>
+            <Route path="/load" element={<Load />} />
             <Route element={<ProtectedRoute />}>
               <Route path="/home" element={<Home />} />
             </Route>

@@ -22,7 +22,7 @@ function SingUp() {
       const { user, token } = await signInWithGoogle();
       setUser(user);
       setToken(token);
-      navigate("/home");
+      navigate("/load");
     } catch (error) {
       console.error(
         "Error al iniciar sesión con Google:",
