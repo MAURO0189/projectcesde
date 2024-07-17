@@ -12,10 +12,9 @@ function Footer() {
               className="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none"
             ></a>
             <p className="text-body-secondary">&copy; Copyright SURA 2024</p>
+            <img src="./Tigre-2.png" alt="img002" className="img-fluid" />
           </div>
-
           <div className="col mb-3"></div>
-
           <div className="col mb-3">
             <h5>SOBRE NOSOTROS</h5>
             <ul className="nav flex-column">
