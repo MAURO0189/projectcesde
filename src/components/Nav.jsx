@@ -1,15 +1,31 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUser } from "@fortawesome/free-solid-svg-icons";
 import Logosura from "../../public/logosura.png";
 import "../assets/style/styles.css";
 
 function Nav() {
+  const [userName, setUserName] = useState("");
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const navigate = useNavigate();
+
+  useEffect(() => {
+    const user = JSON.parse(localStorage.getItem("user"));
+    if (user && user.displayName) {
+      setUserName(user.displayName);
+    }
+  }, []);
+
   const handleLogOut = () => {
     localStorage.removeItem("user");
     localStorage.removeItem("userToken");
     navigate("/");
+  };
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
   };
 
   return (
@@ -51,15 +67,29 @@ function Nav() {
                   Acerca de
                 </Link>
               </li>
-              <li className="nav-item">
+            </ul>
+            <div className="navbar-text text-white d-flex align-items-center">
+              <span
+                className="ms-2"
+                onClick={toggleMenu}
+                style={{ cursor: "pointer" }}
+              >
+                {userName}
+              </span>
+              <FontAwesomeIcon
+                icon={faUser}
+                size="1x"
+                style={{ marginLeft: "8px" }}
+              />
+              {isMenuOpen && (
                 <button
-                  className="nav-link text-white btn"
+                  className="nav-link text-white btn ms-2"
                   onClick={handleLogOut}
                 >
                   Salir
                 </button>
-              </li>
-            </ul>
+              )}
+            </div>
           </div>
         </div>
       </nav>
