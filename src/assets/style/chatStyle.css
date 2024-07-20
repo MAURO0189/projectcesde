@@ -67,6 +67,18 @@
   font-family: "Barlow", sans-serif;
 }
 
+.botMessageContainer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.botIcon {
+  margin-right: 5px;
+  color: #2d6df6;
+  border-radius: 5px;
+}
+
 .botMessage {
   color: #2d6df6;
   word-break: break-word;
