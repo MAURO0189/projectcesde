@@ -12,11 +12,36 @@ function ChatBot() {
   const [inputValue, setInputValue] = useState("");
   const [isChatOpen, setIsChatOpen] = useState(false);
 
-  const handleSend = () => {
+  const handleSend = async () => {
     if (inputValue.trim()) {
+      const userMessage = inputValue.trim().toLowerCase();
       setMessages([...messages, { from: "user", text: inputValue }]);
       setInputValue("");
-      // Aquí puedes añadir lógica para que el bot responda
+
+      try {
+        const response = await fetch("http://localhost:8000/markbot", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ pregunta: userMessage }),
+        });
+
+        if (response.ok) {
+          const data = await response.json();
+          setMessages((prevMessages) => [
+            ...prevMessages,
+            { from: "bot", text: data.respuesta },
+          ]);
+        } else {
+          console.error(
+            "Error en la respuesta del servidor:",
+            response.statusText
+          );
+        }
+      } catch (error) {
+        console.error("Error en la solicitud:", error);
+      }
     }
   };
 
@@ -38,12 +63,26 @@ function ChatBot() {
           </div>
           <div className="messagesContainer">
             {messages.map((msg, index) => (
-              <p
+              <div
                 key={index}
-                className={msg.from === "bot" ? "botMessage" : "userMessage"}
+                className={
+                  msg.from === "bot"
+                    ? "botMessageContainer"
+                    : "userMessageContainer"
+                }
               >
-                {msg.text}
-              </p>
+                {msg.from === "bot" && (
+                  <FontAwesomeIcon
+                    icon={faRobot}
+                    size="1x"
+                    className="botIcon"
+                  />
+                )}
+                <p
+                  className={msg.from === "bot" ? "botMessage" : "userMessage"}
+                  dangerouslySetInnerHTML={{ __html: msg.text }}
+                />
+              </div>
             ))}
           </div>
           <div className="inputContainer">
