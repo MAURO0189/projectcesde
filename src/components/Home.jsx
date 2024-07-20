@@ -37,6 +37,13 @@ function Home() {
                 Conoce las novedades diarias sobre la vacunación contra el
                 COVID-19.
               </p>
+              <a
+                href="https://www.segurossura.com.co/covid-19/paginas/personas/que-hacer-cuando.aspx"
+                className="btn btn-primary"
+                target="_blank"
+              >
+                Preguntas COVID-19
+              </a>
             </div>
           </div>
         </div>
@@ -51,6 +58,13 @@ function Home() {
                 Queremos acompañarte con herramientas que te permitan
                 autogestionarte, aún sin contar con una prueba diagnóstica.
               </p>
+              <a
+                href="https://www.segurossura.com.co/covid-19/paginas/personas/que-hacer-cuando.aspx"
+                className="btn btn-primary"
+                target="_blank"
+              >
+                Preguntas COVID-19
+              </a>
             </div>
           </div>
         </div>
@@ -63,6 +77,13 @@ function Home() {
                 Resuelve tus inquietudes sobre el COVID-19. Encuentra contenidos
                 relevantes para ti, tu familia y tu salud mental.
               </p>
+              <a
+                href="https://www.segurossura.com.co/covid-19/paginas/personas/que-hacer-cuando.aspx"
+                className="btn btn-primary"
+                target="_blank"
+              >
+                Preguntas COVID-19
+              </a>
             </div>
           </div>
         </div>
