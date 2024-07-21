@@ -46,18 +46,13 @@ function About() {
           <p className="col-md-8 fs-4">
             Somos un equipo apasionado de profesionales de la tecnología
             comprometidos con la excelencia en el desarrollo de software. En
-            nuestra familia, encontrarás a Mauro Yepes, nuestra experta Full
+            nuestra familia, encontrarás a Mauro Yepes, nuestra experto Full
             Stack que domina tanto el arte del frontend como del backend con
             JavaScript. Desde interfaces de usuario dinámicas hasta sólidas
             arquitecturas de servidor, Mauro lleva la innovación y la
-            funcionalidad a cada proyecto que toca. Junto a Mauro, está Juan
-            David Taborda, nuestro especialista en Automatización de Procesos
-            Robóticos (RPA). Con su habilidad para diseñar y desplegar robots de
-            software, Juan impulsa la eficiencia operativa y la productividad
-            empresarial. Su enfoque meticuloso y su capacidad para identificar
-            oportunidades de automatización hacen que sea una pieza fundamental
-            en cualquier equipo enfocado en la optimización de procesos. En
-            conjunto, nuestro equipo fusiona la creatividad del desarrollo
+            funcionalidad a cada proyecto que toca. Junto a Mauro, en este
+            ejercicio académido están Sonia Villacorte, Diego Ospina y Tattiana
+            Hernandez en conjunto,fusionando la creatividad del desarrollo
             frontend con la eficiencia de la automatización RPA, ofreciendo
             soluciones tecnológicas integrales y efectivas para nuestros
             clientes. ¡Déjanos llevar tu visión a la realidad digital!
@@ -89,21 +84,17 @@ function About() {
         </div>
         <div className="col-md-6">
           <div className="h-100 p-5 bg-body-tertiary border rounded-3">
-            <h2>Desarrollador de RPA:</h2>
+            <h2>Desarrolladores de RPA:</h2>
             <p>
-              Nombre: Juan David Taborda Descripción: Juan David es un
-              desarrollador especializado en Automatización de Procesos
-              Robóticos (RPA). Con una amplia experiencia en el diseño e
-              implementación de robots de software para automatizar tareas
-              repetitivas y tediosas, Juan David ha demostrado su habilidad para
-              mejorar la eficiencia y la precisión en una variedad de entornos
-              empresariales. Utilizando herramientas como UiPath, Automation
-              Anywhere y Blue Prism, Juan David ha desarrollado soluciones RPA
-              personalizadas para optimizar procesos en áreas como contabilidad,
-              recursos humanos y atención al cliente. Su enfoque meticuloso y su
-              capacidad para identificar oportunidades de automatización lo
-              convierten en un recurso valioso para cualquier equipo orientado a
-              la eficiencia operativa.
+              Nombres:Sonia Villacorte , Diego Ospina, Tattiana Hernandez.
+              Descripción: Grupo de desarrolladores especializados en
+              Automatización de Procesos Robóticos (RPA). Con una amplia
+              experiencia en el diseño e implementación de robots de software
+              para automatizar tareas repetitivas y tediosas, mejorando la
+              eficiencia y la precisión en una variedad de entornos
+              empresariales. Utilizando herramientas como UiPath y otras.
+              Creando en este caso un recurso valioso para cualquier equipo
+              orientado a la eficiencia operativa y apoyo académido de otros.
             </p>
             <button className="btn btn-outline-secondary" type="button">
               Saber más
