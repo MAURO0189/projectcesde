@@ -4,7 +4,12 @@ import React from "react";
 function Carrusel() {
   return (
     <>
-      <div id="carouselExample" className="carousel slide">
+      <div
+        id="carouselExample"
+        className="carousel slide"
+        data-bs-ride="carousel"
+        data-bs-interval="4000"
+      >
         <div className="carousel-inner">
           <div className="carousel-item active">
             <img src="/banner1.png" className="d-block w-100" alt="banner1" />
