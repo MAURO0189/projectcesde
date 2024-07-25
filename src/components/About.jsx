@@ -1,43 +1,11 @@
-// eslint-disable-next-line no-unused-vars
 import React from "react";
-import { Link } from "react-router-dom";
-import Logosura from "../../public/logosura.png";
 import Footer from "./Footer";
+import Nav from "./Nav";
 
 function About() {
   return (
     <>
-      <nav className="navbar navbar-expand-lg fixed-top nav1 my-2">
-        <div className="container">
-          <Link className="navbar-brand" to="/">
-            <img
-              src={Logosura}
-              alt="Este es el logo"
-              style={{ maxWidth: "150px", maxHeight: "60px" }}
-            />
-          </Link>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse" id="navbarNav">
-            <ul className="navbar-nav ms-auto">
-              <li className="nav-item">
-                <Link className="nav-link text-white" to="/">
-                  Home
-                </Link>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+      <Nav />
       <div className="p-5 mb-4 bg-body-tertiary rounded-3">
         <div className="container-fluid py-5">
           <h1 className="display-5 fw-bold">

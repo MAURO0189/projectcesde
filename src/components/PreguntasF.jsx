@@ -1,43 +1,13 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import ChatBot from "./ChatBot";
-import Logosura from "../../public/logosura.png";
+import Nav from "./Nav";
 import "../assets/style/preguntas.css";
+import Footer from "./Footer";
 
 function PreguntasF() {
   return (
     <>
-      <nav className="navbar navbar-expand-lg fixed-top nav1 my-2">
-        <div className="container">
-          <Link className="navbar-brand" to="/">
-            <img
-              src={Logosura}
-              alt="Este es el logo"
-              style={{ maxWidth: "150px", maxHeight: "60px" }}
-            />
-          </Link>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse" id="navbarNav">
-            <ul className="navbar-nav ms-auto">
-              <li className="nav-item">
-                <Link className="nav-link text-white" to="/">
-                  Home
-                </Link>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+      <Nav />
       <br />
       <br />
       <br />
@@ -152,6 +122,7 @@ function PreguntasF() {
         </div>
       </div>
       <ChatBot />
+      <Footer />
     </>
   );
 }
