@@ -1,5 +1,5 @@
-// eslint-disable-next-line no-unused-vars
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -50,9 +50,12 @@ function Footer() {
             <h5>SERVICIOS AL USUARIO</h5>
             <ul className="nav flex-column">
               <li className="nav-item mb-2">
-                <a href="#" className="nav-link p-0 text-body-secondary">
+                <Link
+                  className="nav-link p-0 text-body-secondary"
+                  to="/preguntasF"
+                >
                   Preguntas frecuentes
-                </a>
+                </Link>
               </li>
               <li className="nav-item mb-2">
                 <a href="#" className="nav-link p-0 text-body-secondary">
