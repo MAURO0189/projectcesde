@@ -53,6 +53,11 @@ function Nav() {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ms-auto">
               <li className="nav-item">
+                <Link className="nav-link text-white" to="/preguntasF">
+                  Preguntas Frecuentes
+                </Link>
+              </li>
+              <li className="nav-item">
                 <Link className="nav-link text-white" to="/saludPage">
                   Salud en Casa
                 </Link>

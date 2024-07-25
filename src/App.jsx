@@ -9,6 +9,7 @@ import { UserProvider } from "./context/UserContext";
 import NotBackRoute from "./components/routes/NotBackRoute";
 import ProtectedRoute from "./components/routes/ProtectedRoute";
 import Load from "./components/Load";
+import PreguntasF from "./components/PreguntasF";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
             <Route path="/movilidad" element={<Movilidad />} />
             <Route path="/saludPage" element={<SaludPage />} />
             <Route path="/about" element={<About />} />
+            <Route path="/preguntasF" element={<PreguntasF />} />
           </Routes>
         </Router>
       </UserProvider>
