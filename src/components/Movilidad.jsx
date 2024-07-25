@@ -7,6 +7,7 @@ import Footer from "./Footer";
 import "../assets/style/styles.css";
 import FormularioMovilidad from "./FormularioMovilidad";
 import ChatBot from "./ChatBot";
+import News2 from "./News2";
 
 function Movilidad() {
   return (
@@ -68,6 +69,12 @@ function Movilidad() {
               experiencia y mejorar los niveles de servicio.
             </p>
           </div>
+          <h1 className="titulo mt-3 my-2">Noticias</h1>
+          <p>
+            Infórmate sobre los temas más nuevos en siniestros y la ley de
+            choques simples.
+          </p>
+          <News2 />
         </div>
       </section>
       <Footer />
