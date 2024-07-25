@@ -79,7 +79,10 @@ function News() {
               <h5 className="card-title">Pide tus medicamentos a domicilio</h5>
               <p className="card-text mb-auto">
                 Aprende aquí a pedir tus medicamentos a domicilio desde
-                <a href="https://www.epssura.com/"> www.epssura.com.</a>
+                <a href="https://www.epssura.com/" target="_blank">
+                  {" "}
+                  www.epssura.com.
+                </a>
               </p>
             </div>
           </div>
