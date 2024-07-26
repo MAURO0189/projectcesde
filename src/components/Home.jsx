@@ -4,6 +4,7 @@ import Banner from "./Banner";
 import "../assets/style/styles.css";
 import Footer from "./Footer";
 import ChatBot from "./ChatBot";
+import Testimonials from "./Testimonials";
 
 function Home() {
   return (
@@ -36,6 +37,8 @@ function Home() {
                 Conoce las novedades diarias sobre la vacunación contra el
                 COVID-19.
               </p>
+              <br />
+              <br />
               <a
                 href="https://www.segurossura.com.co/covid-19/paginas/personas/que-hacer-cuando.aspx"
                 className="btn btn-primary"
@@ -76,6 +79,7 @@ function Home() {
                 Resuelve tus inquietudes sobre el COVID-19. Encuentra contenidos
                 relevantes para ti, tu familia y tu salud mental.
               </p>
+              <br />
               <a
                 href="https://www.segurossura.com.co/covid-19/paginas/personas/que-hacer-cuando.aspx"
                 className="btn btn-primary"
@@ -87,6 +91,7 @@ function Home() {
           </div>
         </div>
       </div>
+      <Testimonials />
       <Footer />
     </>
   );
