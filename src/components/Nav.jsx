@@ -53,27 +53,27 @@ function Nav() {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ms-auto">
               <li className="nav-item">
-                <Link className="nav-link text-white" to="/preguntasF">
+                <Link className="nav-link text-white fw-bold" to="/preguntasF">
                   Preguntas Frecuentes
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link text-white" to="/saludPage">
+                <Link className="nav-link text-white fw-bold" to="/saludPage">
                   Salud en Casa
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link text-white" to="/movilidad">
+                <Link className="nav-link text-white fw-bold" to="/movilidad">
                   Movilidad
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link text-white" to="/about">
+                <Link className="nav-link text-white fw-bold" to="/about">
                   Acerca de
                 </Link>
               </li>
             </ul>
-            <div className="navbar-text text-white d-flex align-items-center">
+            <div className="navbar-text text-white d-flex align-items-center fw-bold">
               <span
                 className="ms-2"
                 onClick={toggleMenu}
@@ -88,7 +88,7 @@ function Nav() {
               />
               {isMenuOpen && (
                 <button
-                  className="nav-link text-white btn ms-2"
+                  className="nav-link text-white btn ms-2 fw-bold"
                   onClick={handleLogOut}
                 >
                   Salir
