@@ -12,7 +12,6 @@ function PreguntasF() {
       <br />
       <br />
       <br />
-      <br />
       <h1 className="titleMain">FAQs​</h1>
       <div className="container">
         <div className="row justify-content-center">
@@ -61,7 +60,6 @@ function PreguntasF() {
             <br /> • RUT (Registro Único Tributario).
             <br /> • Experiencia en otro tipo de objetos contractuales.
             <br /> • Declaración de renta.
-            <br />
             <br />
             <h4 className="subtitle">
               ¿SURA puede emitir solo seguros poscontractuales de un contrato?
@@ -117,7 +115,56 @@ function PreguntasF() {
             daños, pérdida total y parcial por hurto, gastos de transporte por
             pérdida total, carro de reemplazo, renta diaria por hospitalización
             y asistencia en viaje. Las coberturas varían de acuerdo al tipo de
-            carro/moto/bici que se quiera asegurar y al plan contratado.
+            carro/moto/bici que se quiera asegurar y al plan contratado. <br />
+            <br />
+            <h4 className="subtitle">
+              ¿Cuál es la cobertura básica del seguro de carro?
+            </h4>
+            La cobertura básica es daños a terceros (cubre daños a bienes, a
+            terceras personas y gastos de defensa judicial en proceso penal y
+            civil). <br />
+            <br />
+            <h4 className="subtitle">
+              ¿Qué incluye la cobertura de daños a terceros?
+            </h4>
+            Daños a bienes de terceros, lesiones o muerte a personas, gastos de
+            defensa judicial en caso que el asegurado tenga una demanda en
+            proceso penal o civil y amparo patrimonial de amplio alcance. <br />
+            <br />
+            <h4 className="subtitle">
+              ¿Cuándo se da extensión de cobertura de daños a terceros?
+            </h4>
+            Cuando el asegurado conduce un carro prestado que no sea de su
+            propiedad y que sea de similares características al asegurado en el
+            seguro (automóvil a campero, pick up o viceversa). <br />
+            <br />
+            <h4 className="subtitle">
+              ¿Cuándo se considera un carro/moto/bici pérdida total por daños?
+            </h4>
+            Cuando los repuestos más la mano de obra más los impuestos superan
+            el 75% del valor asegurado. <br />
+            <br />
+            <h4 className="subtitle">
+              ¿Cuál es el valor máximo para asegurar accesorios en un seguro de
+              carro?
+            </h4>
+            El valor de los accesorios no puede superar el 20% del valor
+            comercial del carro. <br />
+            <br />
+            <h4 className="subtitle">
+              ¿Con qué valor se debe asegurar un carro/moto?
+            </h4>
+            Si es 0 kilómetros debe ser a valor factura y si tiene accesorios se
+            le suma la factura, en caso de ser usado a valor Fasecolda más
+            accesorios que deben ser inspeccionados. <br />
+            <br />
+            <h4 className="subtitle">
+              ¿Cómo debo hacer para cambiar el tomador de un seguro?
+            </h4>
+            Para cambiar tomador se debe cancelar el seguro anterior y
+            diligenciar uno nuevo, se recomienda hacerse a la fecha de la
+            renovación. Pero en cualquier momento de la vigencia se puede anexar
+            un segundo tomador.
           </div>
         </div>
       </div>
